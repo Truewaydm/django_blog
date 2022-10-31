@@ -45,7 +45,7 @@ class Post(models.Model):
     created_at = models.DateTimeField(auto_now_add=True, verbose_name='Created at')
     photo = models.ImageField(upload_to='photos/%Y/%m/%d/', blank=True, verbose_name='Photo')
     views = models.IntegerField(default=0, verbose_name="Count views")
-    category = models.ForeignKey(Category, on_delete=models.PROTECT, related_name='posts')
+    category = models.ForeignKey(Category, on_delete=models.PROTECT, verbose_name='Category', related_name='posts')
     tags = models.ManyToManyField(Tag, blank=True, related_name='posts')
 
     def __str__(self):
