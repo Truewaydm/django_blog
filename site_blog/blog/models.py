@@ -23,6 +23,8 @@ class Category(models.Model):
         return self.title
 
     class Meta:
+        verbose_name = 'Category'
+        verbose_name_plural = 'Categories'
         ordering = ['title']
 
 
@@ -34,6 +36,8 @@ class Tag(models.Model):
         return self.title
 
     class Meta:
+        verbose_name = 'Tag'
+        verbose_name_plural = 'Tags'
         ordering = ['title']
 
 
@@ -52,4 +56,6 @@ class Post(models.Model):
         return self.title
 
     class Meta:
+        verbose_name = 'Post'
+        verbose_name_plural = 'Posts'
         ordering = ['-created_at']
