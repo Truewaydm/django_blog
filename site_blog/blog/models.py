@@ -49,7 +49,7 @@ class Post(models.Model):
     title = models.CharField(max_length=255, verbose_name='Title')
     slug = models.SlugField(max_length=255, verbose_name='Url', unique=True)
     author = models.CharField(max_length=50, verbose_name='Author')
-    content = models.TextField(max_length=255, verbose_name='Author', blank=True)
+    content = models.TextField(max_length=255, verbose_name='Content', blank=True)
     created_at = models.DateTimeField(auto_now_add=True, verbose_name='Created at')
     photo = models.ImageField(upload_to='photos/%Y/%m/%d/', blank=True, verbose_name='Photo')
     views = models.IntegerField(default=0, verbose_name="Count views")
