@@ -743,10 +743,16 @@ section.blog-post-area h4 span.author-name {
 }
 .single-blog-area .newsletter input[type="submit"] {
     width: 40%;
+    margin-top: 10px;
     background: #40c4ff;
     color: #fff;
     text-transform: uppercase;
     font-family: Geometria;
     font-size: 15px;
     font-weight: 500;
+}
+
+.grid .portfolio-item img {
+    width: 100px;
+    height: auto;
 }
