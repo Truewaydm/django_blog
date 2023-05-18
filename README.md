@@ -1,6 +1,6 @@
 ## Tutorial for simple django blog
 
-### Project Setup
+### Project run
 ```sh
 docker-compose up
 ```
